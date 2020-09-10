@@ -7,7 +7,7 @@ import csv
 
 df=pd.read_csv("medium_data.csv")
 data=df["Math_score"].tolist()
-fig = px.scatter(x = score_list, y = accepted_list)
+fig = px.scatter(x = title, y = reading_time)
 
 fig = ff.create_distplot([data], ["Math scores"], show_hist=False)
 fig.show()
